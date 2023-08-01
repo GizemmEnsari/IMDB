@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>upload your profile picture</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      
+      input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 12px;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Upload a profile picture</h2>
+    <br>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="upload">
+        
+    </form>
+  </body>
+</html>
